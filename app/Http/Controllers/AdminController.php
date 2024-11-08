@@ -21,6 +21,6 @@ class AdminController extends Controller
     public function showMessage()
     {
         $messages = User::where('mark', '=', 'offensive')->get();
-        return view('message', ['messages' => $messages]);
+        return view('admin', ['messages' => $messages]);
     }
 }
